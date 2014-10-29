@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73123D0C19F963B3006C9DAE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73123D0B19F963B3006C9DAE /* OpenGL.framework */; };
+		73123D0F19F9E1E5006C9DAE /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73123D0D19F9E1E5006C9DAE /* util.cpp */; };
+		733A0D8019FED1FF00144084 /* fragment.fsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 733A0D7C19FECF3500144084 /* fragment.fsl */; };
+		733A0D8119FED1FF00144084 /* vertex.vsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 733A0D7D19FECF3500144084 /* vertex.vsl */; };
+		733A0D971A00117000144084 /* libovr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 733A0D961A00117000144084 /* libovr.a */; };
+		733A0D991A00118100144084 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733A0D981A00118100144084 /* IOKit.framework */; };
+		733A0D9B1A00163900144084 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733A0D9A1A00163900144084 /* Cocoa.framework */; };
+		733A0DA01A00A46300144084 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733A0D9F1A00A46300144084 /* SDL2.framework */; };
+		733A0DA11A00A4A900144084 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 733A0D9F1A00A46300144084 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		739B093919F870BF002B5A71 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 739B093819F870BF002B5A71 /* main.cpp */; };
+		739B094319F87192002B5A71 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 739B094219F87192002B5A71 /* libLeap.dylib */; };
+		739B094919F876F8002B5A71 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 739B094719F876F8002B5A71 /* App.cpp */; };
+		739B094B19F87D28002B5A71 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 739B094219F87192002B5A71 /* libLeap.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		733A0D7F19FED1F000144084 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				733A0D8019FED1FF00144084 /* fragment.fsl in CopyFiles */,
+				733A0D8119FED1FF00144084 /* vertex.vsl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739B093319F870BF002B5A71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				739B094B19F87D28002B5A71 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739B094C19F87D4A002B5A71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				733A0DA11A00A4A900144084 /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		73123D0B19F963B3006C9DAE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		73123D0D19F9E1E5006C9DAE /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		73123D0E19F9E1E5006C9DAE /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		733A0D7C19FECF3500144084 /* fragment.fsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = fragment.fsl; path = shaders/fragment.fsl; sourceTree = "<group>"; };
+		733A0D7D19FECF3500144084 /* vertex.vsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = vertex.vsl; path = shaders/vertex.vsl; sourceTree = "<group>"; };
+		733A0D961A00117000144084 /* libovr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libovr.a; path = ../OculusSDK/LibOVR/Lib/Mac/Debug/libovr.a; sourceTree = "<group>"; };
+		733A0D981A00118100144084 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		733A0D9A1A00163900144084 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		733A0D9F1A00A46300144084 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		739B093519F870BF002B5A71 /* LeapIntoOculus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeapIntoOculus; sourceTree = BUILT_PRODUCTS_DIR; };
+		739B093819F870BF002B5A71 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		739B094219F87192002B5A71 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../libLeap.dylib; sourceTree = "<group>"; };
+		739B094519F871B8002B5A71 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		739B094619F871B8002B5A71 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		739B094719F876F8002B5A71 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		739B094819F876F8002B5A71 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		739B094A19F87CE2002B5A71 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739B093219F870BF002B5A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733A0D9B1A00163900144084 /* Cocoa.framework in Frameworks */,
+				733A0D991A00118100144084 /* IOKit.framework in Frameworks */,
+				733A0D971A00117000144084 /* libovr.a in Frameworks */,
+				73123D0C19F963B3006C9DAE /* OpenGL.framework in Frameworks */,
+				739B094319F87192002B5A71 /* libLeap.dylib in Frameworks */,
+				733A0DA01A00A46300144084 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		733A0D7E19FECF3D00144084 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				733A0D7C19FECF3500144084 /* fragment.fsl */,
+				733A0D7D19FECF3500144084 /* vertex.vsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		739B092C19F870BF002B5A71 = {
+			isa = PBXGroup;
+			children = (
+				739B093719F870BF002B5A71 /* Src */,
+				739B094419F87199002B5A71 /* LeapSDK */,
+				739B094119F870D9002B5A71 /* Frameworks */,
+				739B093619F870BF002B5A71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739B093619F870BF002B5A71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739B093519F870BF002B5A71 /* LeapIntoOculus */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739B093719F870BF002B5A71 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				739B093819F870BF002B5A71 /* main.cpp */,
+				739B094819F876F8002B5A71 /* App.h */,
+				739B094719F876F8002B5A71 /* App.cpp */,
+				739B094A19F87CE2002B5A71 /* Log.h */,
+				73123D0E19F9E1E5006C9DAE /* util.h */,
+				73123D0D19F9E1E5006C9DAE /* util.cpp */,
+				733A0D7E19FECF3D00144084 /* Shaders */,
+			);
+			name = Src;
+			path = src;
+			sourceTree = "<group>";
+		};
+		739B094119F870D9002B5A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				733A0D9F1A00A46300144084 /* SDL2.framework */,
+				733A0D9A1A00163900144084 /* Cocoa.framework */,
+				733A0D981A00118100144084 /* IOKit.framework */,
+				733A0D961A00117000144084 /* libovr.a */,
+				73123D0B19F963B3006C9DAE /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		739B094419F87199002B5A71 /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				739B094519F871B8002B5A71 /* Leap.h */,
+				739B094619F871B8002B5A71 /* LeapMath.h */,
+				739B094219F87192002B5A71 /* libLeap.dylib */,
+			);
+			name = LeapSDK;
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739B093419F870BF002B5A71 /* LeapIntoOculus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739B093C19F870BF002B5A71 /* Build configuration list for PBXNativeTarget "LeapIntoOculus" */;
+			buildPhases = (
+				739B093119F870BF002B5A71 /* Sources */,
+				739B093219F870BF002B5A71 /* Frameworks */,
+				739B093319F870BF002B5A71 /* CopyFiles */,
+				739B094C19F87D4A002B5A71 /* CopyFiles */,
+				733A0D7F19FED1F000144084 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapIntoOculus;
+			productName = VRHello;
+			productReference = 739B093519F870BF002B5A71 /* LeapIntoOculus */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739B092D19F870BF002B5A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Leap Motion, Inc";
+				TargetAttributes = {
+					739B093419F870BF002B5A71 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 739B093019F870BF002B5A71 /* Build configuration list for PBXProject "LeapIntoOculus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 739B092C19F870BF002B5A71;
+			productRefGroup = 739B093619F870BF002B5A71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739B093419F870BF002B5A71 /* LeapIntoOculus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739B093119F870BF002B5A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739B093919F870BF002B5A71 /* main.cpp in Sources */,
+				739B094919F876F8002B5A71 /* App.cpp in Sources */,
+				73123D0F19F9E1E5006C9DAE /* util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		739B093A19F870BF002B5A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		739B093B19F870BF002B5A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		739B093D19F870BF002B5A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/VRHello/SDL2.framework/Headers",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Include",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Src",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Lib/Mac/Debug",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Lib/Mac/Release",
+				);
+				PRODUCT_NAME = LeapIntoOculus;
+			};
+			name = Debug;
+		};
+		739B093E19F870BF002B5A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/VRHello/SDL2.framework/Headers",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Include",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Src",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Lib/Mac/Debug",
+					"$(PROJECT_DIR)/../OculusSDK/LibOVR/Lib/Mac/Release",
+				);
+				PRODUCT_NAME = LeapIntoOculus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739B093019F870BF002B5A71 /* Build configuration list for PBXProject "LeapIntoOculus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739B093A19F870BF002B5A71 /* Debug */,
+				739B093B19F870BF002B5A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739B093C19F870BF002B5A71 /* Build configuration list for PBXNativeTarget "LeapIntoOculus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739B093D19F870BF002B5A71 /* Debug */,
+				739B093E19F870BF002B5A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739B092D19F870BF002B5A71 /* Project object */;
+}
